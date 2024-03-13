@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height: 59px;
+}
+.logo{
+    margin: 3px 35px;
+}
+.logo img{
+    width: 59px;
+    margin: 3px 20px;
+    border-radius: 60px;
+}
+/* .logo img:hover{
+    width: 100px;
+} */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    display: block;
+    color: white;
+    padding: 3px 20px;
+    text-decoration: none;
+    border-radius: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: black ;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url(cooking2.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 65%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h2{
+    color: white;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Afacad', sans-serif;
+}
+.first{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Dancing Script', cursive;
+}
+.button{
+    padding: 5px 9px;
+    border: 2px solid white;
+    background-color: rgb(170, 65, 65);
+    color: white;
+    margin: 15px;
+    font-size: 0.8rem;
+    border-radius: 9px;
+    cursor: pointer;
+}
+/* .button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 20px;
+} */
+.center{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.primary {
+    /* text-align: center; */
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.h-secondary{
+    font-size: 1.5rem;
+    padding: 12px;
+}
+#service{
+    margin: 34px;
+    display: flex;
+}
+#service .box{
+    border: 2px solid red;
+    padding: 5px 5px;
+    margin: 25px 2px;
+    border-radius: 26px;
+}
+#service .box img{
+    display: block;
+    height: 150px;
+    width: 200px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 2px 3px 4px;
+}
+#client-section{
+    font-size: 25px;
+    height: 50px;
+}
+#client-section::before{
+    content: "";
+    background: url(cooking3.jpg);
+    height: 390px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#clients{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.client-item{
+    padding: 13px;
+}
+.client-item img{
+    position: relative;
+    top: 50px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+}
+
